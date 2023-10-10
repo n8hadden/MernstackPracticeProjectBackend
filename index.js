@@ -4,11 +4,11 @@ let cors = require('cors');
 let bodyParser = require("body-parser");
 
 // Express Route
-const studentRoute = require('./routes/student.routes');
+const studentRoute = require('./Routes/Student.route');
 
 // Connecting to Mongoose
 mongoose
-    .connect("mongodb+srv://<information>@cluster0.smsaqvq.mongodb.net/DatabaseUsers")
+    .connect("mongodb+srv://<information>@cluster0.tckbzcq.mongodb.net/?retryWrites=true&w=majority")
     .then((x) => {
         console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
     })

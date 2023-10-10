@@ -79,10 +79,7 @@ router.route("/delete-student/:id").delete(async (req, res, next) => {
         res.json({
             msg: "Data successfully updated."
         });
-    })
-    .catch((err) => {
-        console.log(err);
-    });
-});
+   })
+})
 
 module.exports = router;
