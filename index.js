@@ -8,7 +8,7 @@ const studentRoute = require('./Routes/Student.route');
 
 // Connecting to Mongoose
 mongoose
-    .connect("mongodb+srv://<information>@cluster0.tckbzcq.mongodb.net/?retryWrites=true&w=majority")
+    .connect("mongodb+srv://<information>@cluster0.tckbzcq.mongodb.net/MernstackPracticeProject")
     .then((x) => {
         console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
     })
